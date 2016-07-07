@@ -11,9 +11,9 @@
     .header__block {
         float: left;
         width: 33%;
-        border: 1px solid black;
+        border: 10px solid yellow;
         padding: 10px;
-
-        
     }
 }
+
+

@@ -12,22 +12,30 @@ var mainBowerFiles = require('main-bower-files');
 
 
 gulp.task('less', function() {
-	return gulp.src('src/style.css')
+	return gulp.src('src/css/style.css')
 			.pipe(less())
 			.pipe(autoprefixer())
 			.pipe(cleancss())
 			.pipe(gulp.dest('dist/css/'))
+			.pipe(browser.reload({
+				stream: true
+			}))
 })
 
-gulp.task('html', ['less'], function() {
+gulp.task('html', function() {
 	return gulp.src('src/index.html')
 			.pipe(gulp.dest('dist'))
 })
 
 gulp.task('browser', function() {
 	browser.init({
-		baseDir: 'dist'
+		server: {
+			baseDir: 'dist'
+		},
+		notify: false
 	});
 })
 
-// gulp.task('')
+gulp.task('watch', ['html', 'less', 'browser'], function() {
+	gulp.watch('src/css/*.css', ['less']);
+})
