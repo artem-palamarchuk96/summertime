@@ -1,0 +1,32 @@
+{
+  "name": "summertime",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artem-palamarchuk96/summertime.git"
+  },
+  "author": "artem",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/artem-palamarchuk96/summertime/issues"
+  },
+  "homepage": "https://github.com/artem-palamarchuk96/summertime#readme",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean-css": "^2.0.11",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-less": "^3.1.0",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.4",
+    "imagemin-pngquant": "^5.0.0",
+    "main-bower-files": "^2.13.1"
+  }
+}
